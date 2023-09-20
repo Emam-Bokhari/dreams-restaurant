@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLaout from "../Layouts/MainLayout/MainLaout";
-import Home from "../Home/Home";
+import Home from "../HomeDataLoad/HomeDataLoad";
 import Food from "../Food/Food";
 import Dashboard from './../Dashboard/Dashboard';
 
@@ -11,6 +11,7 @@ const Route = createBrowserRouter([
         children: [
             {
                 path: '/',
+                loader:()=>fetch("https://www.themealdb.com/api/json/v1/1/categories.php"),
                 element: <Home />
             },
             {
