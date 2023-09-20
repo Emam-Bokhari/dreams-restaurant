@@ -8,7 +8,7 @@ const Home = ({ data }) => {
 
             <div className="  flex flex-col p-4 shadow-md rounded-md">
 
-                <div className="text-center">
+                <div className="flex justify-center">
                     <img className="h-60 w-full rounded-md" src={strCategoryThumb} />
                 </div>
                 <h2 className="text-center text-xl font-semibolda mt-2"> <span className="text-orange-400">Category: </span> {strCategory}</h2>

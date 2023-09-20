@@ -16,6 +16,7 @@ const Route = createBrowserRouter([
             },
             {
                 path:'/food',
+                loader:()=>fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`),
                 element:<Food/>
             },
             {
